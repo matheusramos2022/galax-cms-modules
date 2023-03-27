@@ -30,4 +30,13 @@ class Controller extends BaseController
         // Para conectar no banco do cliente deve ser usado a trait IsClientDataBase na model.
         return $test->test();
     }
+
+    public function getModules()
+    {
+        dd('asas');
+        $test = new Test();
+        // A Repository precisa ser registrada na classe RepositoryServiceProvider com sua devida interface
+        // Para conectar no banco do cliente deve ser usado a trait IsClientDataBase na model.
+        return $test->test();
+    }
 }

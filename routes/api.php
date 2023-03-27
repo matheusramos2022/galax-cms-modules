@@ -8,6 +8,7 @@ Route::group(['prefix' => 'v1'], function () {
     Route::group(['middleware' => ['externalAuth']], function () {
         Route::get('test', [Controller::class, 'test'])->name('test');
     });
+    Route::get('getModules', [Controller::class, 'getModules'])->name('getModules');
 });
 
 Route::get('opa', function () {
